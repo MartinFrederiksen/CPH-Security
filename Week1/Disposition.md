@@ -11,7 +11,7 @@
 #### Trussel(Hacker gruppen) og sårbarhed = sandsynligheden(likelihood)
 ##### Trussel
 * Erfaring.
-⋅⋅⋅Hvor teknisk erfarne er gruppen.
+   Hvor teknisk erfarne er gruppen.
 * Motiv.
 - Hvor motiveret er gruppen til at finde og udnytte sårbarheden.
 * Mulighed.
