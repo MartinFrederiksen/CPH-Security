@@ -73,6 +73,6 @@
 
 
 ### Explain how security risks are rated in OWASP.
-![alt text](owasp.png "Title")
+!(owasp.jpg)
 
 ### Argue whether OWASP gives the complete picture of security risks on an application.
