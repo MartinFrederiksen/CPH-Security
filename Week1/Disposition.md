@@ -21,18 +21,20 @@
 * Opmærksomhed - Hvor kendt er sårbarheden for gruppen.
 * Afsløring - Hvad er sandsynligheden for at udnyttelsen af sårbarheden bliver opdaget.
 
-| Are           |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
-| | |
-|:---------:|:------:|
-|   0 < 3	|   Low	|
-|   3 < 6	|   Medium	|
-|   6 < 10	|   High	|
-
+<table align="center">
+    <tbody>
+        <tr>
+            <td align="center">0 < 3</td>
+            <td align="center">3 < 6</td>
+            <td align="center">6 < 10</td>
+        </tr>
+        <tr>
+            <td align="center">Low</td>
+            <td align="center">Medium</td>
+            <td align="center">High</td>
+        </tr>
+    </tbody>
+</table>
 
 <table align="center">
     <thead>
