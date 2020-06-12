@@ -2,9 +2,8 @@
 
 
 ## Explain the two sets of Factors - Threat Agents and Vulnerability.
-### Risk = Likelihood ∗ Impact
 
-#### Trussel(Hacker gruppen) og sårbarhed = sandsynligheden(likelihood)
+#### Risiko = Sandsynlighed ∗ Påvirkning
 ##### Trussel
 * Erfaring - Hvor teknisk erfarne er gruppen.
 * Motiv - Hvor motiveret er gruppen til at finde og udnytte sårbarheden.
