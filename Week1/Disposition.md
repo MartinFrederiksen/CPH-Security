@@ -26,6 +26,7 @@
 |   6 < 10	|   High	|
 
 | Sandsynlighed	|
+|-----	|-----	|-----	|-----	|-----	|-----	|-----	|-----	|
 |Erfaring|Motiv|Mulighed|Størrelse|Opdage|Udnytte|Opmærksomhed|Afsløring af indtrængen|
 |   5	|   9	|   4	|   9	|   3	|   3	|   4	|   8	|
 |   Sandsynlighed	|   5.625	|   Medium	|
