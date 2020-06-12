@@ -22,13 +22,13 @@
 * Afsløring af indtrængen - Hvad er sandsynligheden for at udnyttelsen af sårbarheden bliver opdaget.
 
 | Are           |
-|:-------------:|
+| ------------- |:-------------:| -----:|
 | col 3 is      | right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
 
-
+|:---------:|:------:|
 |   0 < 3	|   Low	|
 |   3 < 6	|   Medium	|
 |   6 < 10	|   High	|
