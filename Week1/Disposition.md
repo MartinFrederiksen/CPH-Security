@@ -70,9 +70,10 @@
 </table>
 
 ### Give some examples of how you can change those parameters - for example for MySQL servers.
-
+* Injection
 
 ### Explain how security risks are rated in OWASP.
 ![alt text](owasp.jpg)
 
 ### Argue whether OWASP gives the complete picture of security risks on an application.
+* Top 10
