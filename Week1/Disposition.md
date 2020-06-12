@@ -33,6 +33,10 @@
 |   3 < 6	|   Medium	|
 |   6 < 10	|   High	|
 
+| <!-- -->    | <!-- -->    |
+|-------------|-------------|
+| Foo         | Bar         |
+
 | Sandsynlighed	|
 |-----	|-----	|-----	|-----	|-----	|-----	|-----	|-----	|
 |Erfaring|Motiv|Mulighed|Størrelse|Opdage|Udnytte|Opmærksomhed|Afsløring af indtrængen|
