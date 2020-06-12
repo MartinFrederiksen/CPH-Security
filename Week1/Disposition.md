@@ -37,7 +37,7 @@
 <table align="center">
     <thead>
         <tr>
-            <th align="center", colspan="8">Sandsynlighed</th>
+            <th align="center", colspan="8">Sandsynligheds udregning</th>
         </tr>
     </thead>
     <tbody>
@@ -52,9 +52,19 @@
             <td align="center">Afsløring</td>
         </tr>
         <tr>
-            <td align="center">Some other text 2</td>
-            <td align="center">More text 2</td>
-            <td align="center">More text 2</td>
+            <td align="center">5</td>
+            <td align="center">9</td>
+            <td align="center">4</td>
+            <td align="center">9</td>
+            <td align="center">3</td>
+            <td align="center">3</td>
+            <td align="center">4</td>
+            <td align="center">8</td>
+        </tr>
+        <tr>
+            <td align="center", colspan="4" >Sandsynlighed</td>
+            <td align="center">5.625</td>
+            <td align="center", colspan="3" >Medium</td>
         </tr>
     </tbody>
 </table>
