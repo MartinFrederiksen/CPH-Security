@@ -19,7 +19,7 @@
 * Opdage - Hvor nemt er det for gruppen at opdage sårbarheden.
 * Udnytte - Hvor nemt er det for gruppen at udnytte sårbarheden.
 * Opmærksomhed - Hvor kendt er sårbarheden for gruppen.
-* Afsløring af indtrængen - Hvad er sandsynligheden for at udnyttelsen af sårbarheden bliver opdaget.
+* Afsløring - Hvad er sandsynligheden for at udnyttelsen af sårbarheden bliver opdaget.
 
 | Are           |
 | ------------- |:-------------:| -----:|
@@ -37,13 +37,19 @@
 <table align="center">
     <thead>
         <tr>
-            <th align="center", colspan="3">Some other text</th>
+            <th align="center", colspan="8">Sandsynlighed</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td align="center">Some other text 2</td>
-            <td align="center">More text 2</td>
+            <td align="center">Erfaring</td>
+            <td align="center">Motiv</td>
+            <td align="center">Mulighed</td>
+            <td align="center">Størrelse</td>
+            <td align="center">Opdage</td>
+            <td align="center">Udnytte</td>
+            <td align="center">Opmærksomhed</td>
+            <td align="center">Afsløring</td>
         </tr>
         <tr>
             <td align="center">Some other text 2</td>
@@ -57,7 +63,7 @@
 
 | Sandsynlighed	|
 |-----	|-----	|-----	|-----	|-----	|-----	|-----	|-----	|
-|Erfaring|Motiv|Mulighed|Størrelse|Opdage|Udnytte|Opmærksomhed|Afsløring af indtrængen|
+|Erfaring|Motiv|Mulighed|Størrelse|Opdage|Udnytte|Opmærksomhed|Afsløring|
 |   5	|   9	|   4	|   9	|   3	|   3	|   4	|   8	|
 |   Sandsynlighed	|   5.625	|   Medium	|
 
