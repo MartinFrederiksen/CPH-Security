@@ -69,7 +69,7 @@
 </table>
 
 ### Give some examples of how you can change those parameters - for example for MySQL servers.
-* Injection
+* Injection - Øvelse fra Week1
 
 ### Explain how security risks are rated in OWASP.
 ![alt text](owasp.jpg)
