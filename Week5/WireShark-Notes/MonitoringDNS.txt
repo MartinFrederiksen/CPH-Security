@@ -1,0 +1,23 @@
+Loaded ft.dk
+
+What transport protocol is DNS using?
+    UDP
+
+To what IP address was the DNS query message sent?
+    127.0.0.53
+
+What is the name (s) used for this server.
+    127.0.0.53
+
+
+nslookup andreasvikke.dk
+    gives back the IP of the domain, in wireshark you can
+    see that the DNS is assked for he IP and then the DNS is
+    asked for the site on that IP
+
+nslookup -type=NS andreasvikke.dk
+    gives back the DNS nameservers, on my site its ns unoeuro
+
+nslookup andreasvikke.dk 8.8.8.8
+    uses 8.8.8.8 dns server which is Google developer DNS server
+

@@ -1,0 +1,7 @@
+PING 142.93.219.185 (142.93.219.185) 56(84) bytes of data.
+64 bytes from 142.93.219.185: icmp_seq=1 ttl=46 time=213 ms
+64 bytes from 142.93.219.185: icmp_seq=2 ttl=46 time=236 ms
+
+--- 142.93.219.185 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1000ms
+rtt min/avg/max/mdev = 213.045/224.676/236.308/11.631 ms

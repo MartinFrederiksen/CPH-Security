@@ -1,0 +1,14 @@
+Which  IP addresses are the client using as destination and source for the two messages (Discovery and Request) sent to the DHCP-server (remember it does not (initially) know the address of the server? Hint: see figure below
+    destination: 255.255.255.255
+    source: 0.0.0.0
+    All possible ip addresses
+
+Who is offering a new IP address and what was the offered address?
+    offering: efif.dk
+    offered: 10.50.138.63
+
+Did you accept the offered address?
+    yes
+
+Verify (ifconfig) that this is your new address
+    netmask from ifconfig: 10.50.138.63

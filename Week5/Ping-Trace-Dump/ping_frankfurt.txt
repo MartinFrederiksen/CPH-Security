@@ -1,0 +1,7 @@
+PING melif.dk (206.81.26.246) 56(84) bytes of data.
+64 bytes from 206.81.26.246 (206.81.26.246): icmp_seq=1 ttl=55 time=17.8 ms
+64 bytes from 206.81.26.246 (206.81.26.246): icmp_seq=2 ttl=55 time=19.6 ms
+
+--- melif.dk ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1002ms
+rtt min/avg/max/mdev = 17.814/18.703/19.592/0.889 ms

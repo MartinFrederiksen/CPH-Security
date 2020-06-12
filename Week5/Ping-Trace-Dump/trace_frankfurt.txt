@@ -1,0 +1,14 @@
+traceroute to melif.dk (206.81.26.246), 30 hops max, 60 byte packets
+ 1  _gateway (10.50.128.1)  2.675 ms  2.946 ms  2.946 ms
+ 2  * * *
+ 3  * * *
+ 4  5.179.80.193 (5.179.80.193)  3.309 ms  3.311 ms  3.674 ms
+ 5  93.176.95.62 (93.176.95.62)  6.839 ms  6.838 ms  7.506 ms
+ 6  kbn-b3-link.telia.net (62.115.156.186)  6.830 ms  3.205 ms  3.171 ms
+ 7  kbn-bb3-link.telia.net (213.155.135.178)  14.983 ms  14.993 ms  15.916 ms
+ 8  ffm-bb1-link.telia.net (62.115.114.93)  15.616 ms  15.621 ms  15.902 ms
+ 9  ffm-b5-link.telia.net (62.115.114.89)  15.277 ms  15.281 ms  15.785 ms
+10  digitalocean-ic-328178-ffm-b4.c.telia.net (80.239.128.23)  15.765 ms  15.675 ms  15.670 ms
+11  * * *
+12  * * *
+13  206.81.26.246 (206.81.26.246)  16.771 ms  16.751 ms  16.132 ms
