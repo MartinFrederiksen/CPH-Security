@@ -21,6 +21,14 @@
 * Opmærksomhed - Hvor kendt er sårbarheden for gruppen.
 * Afsløring af indtrængen - Hvad er sandsynligheden for at udnyttelsen af sårbarheden bliver opdaget.
 
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+
+
 |   0 < 3	|   Low	|
 |   3 < 6	|   Medium	|
 |   6 < 10	|   High	|
