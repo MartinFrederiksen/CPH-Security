@@ -37,7 +37,7 @@
 <table align="center">
     <thead>
         <tr>
-            <th align="center">Some other text</th>
+            <th align="center", colspan="3">Some other text</th>
         </tr>
     </thead>
     <tbody>
