@@ -1,12 +1,8 @@
 # Week-01 OWASP Rating Methodology
 
 
-### Explain the two sets of Factors - Threat Agents and Vulnerability.
-#### Risk = Likelihood ∗ Impact
-* Truslen der er involveret.
-* Angrebet der vil blive brugt.
-* Sårbarhed involveret.
-* Indvirkningen af en succesfuldt udnyttelse af virksomheden.
+## Explain the two sets of Factors - Threat Agents and Vulnerability.
+### Risk = Likelihood ∗ Impact
 
 #### Trussel(Hacker gruppen) og sårbarhed = sandsynligheden(likelihood)
 ##### Trussel
@@ -73,18 +69,10 @@
     </tbody>
 </table>
 
-
-
-| Sandsynlighed	|
-|-----	|-----	|-----	|-----	|-----	|-----	|-----	|-----	|
-|Erfaring|Motiv|Mulighed|Størrelse|Opdage|Udnytte|Opmærksomhed|Afsløring|
-|   5	|   9	|   4	|   9	|   3	|   3	|   4	|   8	|
-|   Sandsynlighed	|   5.625	|   Medium	|
-
 ### Give some examples of how you can change those parameters - for example for MySQL servers.
 
 
 ### Explain how security risks are rated in OWASP.
-
+![alt text](owasp.png "Title")
 
 ### Argue whether OWASP gives the complete picture of security risks on an application.
