@@ -35,18 +35,22 @@
 
 
 <table align="center">
-    <tr>
-        <td align="center">Some other text</td>
-    </tr>
-    <tr>
-        <td align="center">Some other text 2</td>
-        <td align="center">More text 2</td>
-    </tr>
-    <tr>
-        <td align="center">Some other text 2</td>
-        <td align="center">More text 2</td>
-        <td align="center">More text 2</td>
-    </tr>
+    <thead>
+        <tr>
+            <th align="center">Some other text</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center">Some other text 2</td>
+            <td align="center">More text 2</td>
+        </tr>
+        <tr>
+            <td align="center">Some other text 2</td>
+            <td align="center">More text 2</td>
+            <td align="center">More text 2</td>
+        </tr>
+    </tbody>
 </table>
 
 
