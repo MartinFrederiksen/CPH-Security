@@ -10,22 +10,25 @@
 
 #### Trussel(Hacker gruppen) og sårbarhed = sandsynligheden(likelihood)
 ##### Trussel
-* Erfaring.
-   Hvor teknisk erfarne er gruppen.
-* Motiv.
-- Hvor motiveret er gruppen til at finde og udnytte sårbarheden.
-* Mulighed.
-- Hvilke muligheder og ressourcer er krævet for gruppen for at finde og udnytte sårbarheden.
-* Størrelse.
-- Hvor stor er gruppen.
+* Erfaring - Hvor teknisk erfarne er gruppen.
+* Motiv - Hvor motiveret er gruppen til at finde og udnytte sårbarheden.
+* Mulighed - Hvilke muligheder og ressourcer er krævet for gruppen for at finde og udnytte sårbarheden.
+* Størrelse - Hvor stor er gruppen.
 
 ##### Sårbarhed
-* Hvor nemt er det at opdage.
-* Hvor nemt er det at udnytte.
-* Opmærksomhed.
-* Afsløring af indtrængen.
+* Opdage - Hvor nemt er det for gruppen at opdage sårbarheden.
+* Udnytte - Hvor nemt er det for gruppen at udnytte sårbarheden.
+* Opmærksomhed - Hvor kendt er sårbarheden for gruppen.
+* Afsløring af indtrængen - Hvad er sandsynligheden for at udnyttelsen af sårbarheden bliver opdaget.
 
+|   0 < 3	|   Low	|
+|   3 < 6	|   Medium	|
+|   6 < 10	|   High	|
 
+| Sandsynlighed	|
+|Erfaring|Motiv|Mulighed|Størrelse|Opdage|Udnytte|Opmærksomhed|Afsløring af indtrængen|
+|   5	|   9	|   4	|   9	|   3	|   3	|   4	|   8	|
+|   Sandsynlighed	|   5.625	|   Medium	|
 
 ### Give some examples of how you can change those parameters - for example for MySQL servers.
 
