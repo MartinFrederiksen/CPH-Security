@@ -33,9 +33,23 @@
 |   3 < 6	|   Medium	|
 |   6 < 10	|   High	|
 
-| <!-- -->    | <!-- -->    |
-|-------------|-------------|
-| Foo         | Bar         |
+
+<table align="center">
+    <tr>
+        <td align="center">Some other text</td>
+    </tr>
+    <tr>
+        <td align="center">Some other text 2</td>
+        <td align="center">More text 2</td>
+    </tr>
+    <tr>
+        <td align="center">Some other text 2</td>
+        <td align="center">More text 2</td>
+        <td align="center">More text 2</td>
+    </tr>
+</table>
+
+
 
 | Sandsynlighed	|
 |-----	|-----	|-----	|-----	|-----	|-----	|-----	|-----	|
