@@ -25,12 +25,14 @@
     <tbody>
         <tr>
             <td align="center">0 < 3</td>
-            <td align="center">3 < 6</td>
-            <td align="center">6 < 10</td>
+            <td align="center">Low</td>
         </tr>
         <tr>
-            <td align="center">Low</td>
+            <td align="center">3 < 6</td>
             <td align="center">Medium</td>
+        </tr>
+        <tr>
+            <td align="center">6 < 10</td>
             <td align="center">High</td>
         </tr>
     </tbody>
