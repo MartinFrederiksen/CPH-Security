@@ -27,7 +27,7 @@
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
-
+| | |
 |:---------:|:------:|
 |   0 < 3	|   Low	|
 |   3 < 6	|   Medium	|
