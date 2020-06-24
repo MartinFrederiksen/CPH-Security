@@ -1,36 +1,25 @@
-# Week-10 Social Engineering, Denial-of-service attacks
+# Week 11 - A1 SQL injection
 Group: Martin Frederiksen(cph-mf237), Andreas Vikke(cph-av105).
+    (Week4 - JuiceShop) (cd /mnt/c/Users/Bacon/Documents/GitHub/CPH-Business-Security/Week4/juice-shop/)
 
-### Explain different ways to use Social Engineering (vectors)
-* Vishing(Voice phishing).
-* Phishing(Spear phishing, Watering hole).
-* Smishing(SMS phishing).
-* Impersonation(Whaling email).
-
-
-### Discuss ways to detect social engineering attempts (principles)
-* Reprocity(Return the favor - good/bad cop).
-* Commitment and consistency(Hjernevask).
-* Social proof(Andre gør det).
-* Authority..
-* Linking(Hvad gør og tænker andre).
-* Scarity(Limited time).
+### Give an example of a SQL inject which will give all users in a user table
+- Input: "Hans' or 1 = 1;--"
+- SQL: "SELECT * FROM USERS WHERE name = '" + input + "'"
+- Combined: SELECT * FROM USERS WHERE name = 'Hans' or 1 = 1; --'
 
 
-### Explain the most common DoS strategies
-* Distributed attacks.
-* Crash service.
-* Flood service.
+### Explain how prepared statements prevent SQL injection
+1. En forberedt sql statement bliver sendt til databasen og bliver klargjort(prepared) hvor den ikke har nogle values men ? istedet. Ex - INSERT INTO MyGuests VALUES(?, ?, ?)
+2. Databasen parser, kompilere og optimisere sql statementet og gemmer det uden at eksekvere det.
+3. Når sql statementet skal eksekveres binder applikationen værdierne til parameterne.
+4. Ingen sql injection fordi vores parameter værdier bliver sendt efterføglende vha en anden protokol.(Escaping)
 
 
-### Discuss common means to minimize threads of DoS
-* Bandwith consumption.
-* Build Redundancy into your infrastructure(Brug flere datacentre aka flere servere).
-* Keeping connections open(Serveren skal ikke vente på svar og fylde memory 3-way).
+### Explain how to use placeholders in cases where prepared statements cannot do the job
+For at bruge placeholders skal du erstatte placeholderen i strengen med dit input. Dette er ikke en god metode da sql injection kan opstå. 
+1. DECLARE @query AS NVARCHAR(255) = N'SELECT * FROM dbo.Table';
+2. SELECT @query AS query;
 
 
-# Handling Passwords and Secrets (Optional)
-### Explain why it’s always a problem to store user passwords in plain text in our database
-### Explain about the different hashing algorithms available, and why slow is good
-### Demonstrate, or show a timing diagram, about Bcrypts perfomance (time) for increasing number of rounds
-### Demonstrate how BCrypt stores Hash and Salt values and explain the two terms
+### Explain how logging could be used to monitor injection attempts
+Ex. en server kan logge det input data der bliver sendt til den og derved kan der efterføglende ses i loggen om der er sql fragmenter i de inputs der blev sendt. Hvis der er sql fragmenter i input strengende er det med stor sandsynlighed injection forsøg.

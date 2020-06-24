@@ -1,65 +1,43 @@
-# Authentication/login- strategies
+# Week 9 - SSH + Crypto-1
+    (SSL Show Websites. Droplet: ssh root@161.35.197.54)
+    (http://www.pythonchallenge.com/ - http://www.andreasvikke.dk/)
+
+### Explain conceptually all the following terms, and how/why they are needed for SSH and TLS/SSL.
+- Symmetric Encryption
+    - En algoritme for kryptografi som bruger en kryptografiske nøgle for at enkryptere en plain tekst og dekryptering af en chifferskrift(cipher tekst).
+    - Use case: Ex bluetooth.
+- Asymmetric Encryption
+    - En algoritme for kryptografi som bruger et par af kryptografiske nøgler for at kunne enkryptere en plain tekst og dekryptere en cipher tekst. Den offentlige nøgle(public) er kendt af mange og den private nøgle(private) er kun kendt af egeren(ham der laver nøglen/kryptere teksten)
+    - Use case: Ex SSH / Dankort systemer.
+- Hashing
+    - En særlig funktion som bruges til at omdanne data fra en stor definitionsmængde til en mindre værdimængde. Har så få kollisioner som muligt, En kollision er når to forskellige inddata giver samme funktionsværdi. Det er kun muligt at gå den ene vej.
+    - Use case: Sortering af nøgle/værdier(key/value) par i en database.
 
 
-### Java’s declarative authentication and authorization features
-#### Pros
-* Framework der er blevet bygget og bliver opdateret
-* Det kan bruges på både desktop applikations og web-applikations i en browser. Spootify kan genbruge auth model.
-* Du kan bestemme hvad der skal kræves login på. Ex api metoder.
-* Du sender kun login en gang. Java session id bliver genbrugt(kinda token).
+### Explain what it takes to safely log in to an SSH server, without having to provide a password.
+Dette kræver en offentlig nøgle(public key) og en privat nøgle(private key) og en ip. Offentlig nøgle ligger på serveren du skal oprette forbindelse til og med din private nøgle kryptere du dataen du vil sende til serveren og serveren kan så dekryptere dataen med sin offentlige nøgle. Asymmetrisk kryptering.
 
-#### Cons
-* Jaas er baseret på HVEM der køre koden og ikke HVAD der bliver kørt i koden.
-* Byg ovenpå et allerede eksisterende framework.
-* Kræver lidt opsætning - Basic auth er hurtigere at sætte op og kræver ikke db.
+Eks: A ønsker at kunne modtage en hemmelig leverance fra B. En tredjepart C må ikke kunne få fat i den hemmelige leverance, og når først den er afsendt, må B heller ikke kunne få fat i leverancen. A sender en hængelås(Public key) til B, men beholder nøglen(Private key). B låser leverancen nede i en kasse og sender den til A. A åbner kassen med sin nøgle. 
 
 
-### Basic HTTP-authentication
-#### Pros
-* Nemt at sætte op kræver ikke ex. cookies, sessions.
-* State er holdt af HTTP clienten.(Username/Pw)
-* På HTTPS vil SSL gøre det mere sikkert i forhold til man in the middle attacks.
-* Kun et request - (! token fra api -> der hvor du vil hen)
-
-#### Cons
-* Username/Pw bliver sendt ved hvert request.
-* Sårbart til man in the middle attacks.
-* "Grim" login box.
-* Password og username bliver ikke hashet eller krypteret men bliver encoded med base64.
-* Brugeren kan ikke logge ud før browser lukkes
-* Der kan ikke inkluderes andre informationer end username og password.
-* Udsat for bruteforce kan gøres noget på server side.
+### Explain the term SSH-tunnel, and provide a practical example for its use.
+Secure shell tunneling er en krypteret tunnel til at overføre ikke krypteret traffik. Når en server og en client har godkendt hinanden vha. offentlig/privat nøglepar(public/private key pairs) bliver der etableret en SSH-tunnel til at kryptere alt data mellem client og server så offentlig/privat nøgleparrene ikke længere skal bruges.
 
 
-### Form-based authentication
-#### Pros
-* Selv lavet login box/side.
-* Egen redirect/ forskellige redirects pr bruger(kan ændre siden efter login) side.
-* Egen error side.
-* Sender ikke login info hver gang der laves en request.
-* Kan sende flere ting med.
-* Robotbeskyttelse i form af reCaptcha.
-* Mulighed for kryptering på form.(Man in the middle)
-* Fuld kontrol over authentication code.
-
-#### Cons
-* Selv lavet login box/side.
-* Skal logge ind hver gang da browseren ikke gemmer info. Uden token.
-* Database(admin/program) - Oplysninger skal gemmes og gemmes sikkert.
-* Man in the middle - SSL
-* Fuld kontrol over authentication code (Vedligeholdelse).
+### Explain conceptually the purpose of Symmetrical Encryption, Asymmetrical Encryption and hashing for an SSH-connection.
+- Symmetrisk kryptering bruges af SSH-tunnelen til at kryptere dataen der skal sendes imellem clienten og serveren.
+- Asymmetrisk kryptering bruges til at oprette SSH-tunnelen, ved at sende den Symmetriske nøgle med de asymetriske nøgler til begge parter.
+- Hashing bruges af SSH-tunnelen for at minimere datamangden der skal krypteres. Ex client sender plain tekst hashed og sender tekst krypteret for at server kan dekryptere tekst og hashe teksten for at se om det er det samme som clients hashed tekst.
 
 
-### Token Based authentication
-#### Pros
-* Stateless
-* Payload indeholder alt the nødvendige data om brugeren og derved undgår vi at tilgå serveren mere end en gang.
-* Underskrevet vi kan verificere brugeren.
-* Skalerbart(nemt).
-* Kan deles imellem mange enheder.
-* Kan bruges af stort set alle teknologier/Sprog.
+### Explain the steps you have to go through to set up a server with MySQL, as secure as possible →
+- How can we limit the client IP's that can connect
+    - Vi kan begrænse clientens IP's der kan forbinde ved at tilføje ip'erne til serverens firewall og give tilladelse til at bruge port 3306 til den givne ip.
+- If set up to allow only localhost and a firewall that deny 3306, can we still connect “safely” from a remote server 
+    - Ja igennem en SSH-tunnel
+- how to set up an SSL connection that anyone can use
+    - Ved at tilføje mysql med require_secure_transport=ON i /etC/mysql/my.cnf, og generere mysql ssl rsa nøgler
+- Demonstrate a client application (Java or whatever you prefer) running on a separate server that access the Database using SSL
+    - Vis øvelserne fra denne uge!
 
-#### Cons
-* Når en token er underskrevet er den gyldig indtil udløbs tidspunkt.
-* Log ud ved at slette token på client siden men token er stadig gyldig. -> Server performance issues hvis vi vælger at blackliste.
-* Hvis signerings sikkerheden bliver bragt i fare, vil alle tokens potentielt være i fare.
+![papk](Public-and-Private-Key-SSL-Encryption.png)

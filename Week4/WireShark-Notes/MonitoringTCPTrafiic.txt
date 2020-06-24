@@ -1,0 +1,20 @@
+
+Included Payload (HTML): Byte line 0130-01c0
+Included Port Number: Bytes: 15 af
+Included IP addresses: Bytes: 7f 00 00 01
+Included MAC addresses: Bytes: 00 00 00 00 00 00
+
+
+TCP SYN, SYN-ACK, ACK
+Open Flow Graph, Flow type: TCP Flows
+SYN: First, port 50200 to 5551
+SYN-ACK:  Second, port 5551 to 50200
+ACK: Third, port 50200 to 5551
+
+
+What is the total amount of TCP-packages sent?
+	12
+Close this window, and see whether you can identify a number of packages from the two groups found above using the length column (try to sort on destination or source). 
+Given the very limited knowledge you have about the details of TCP, can you identify the purpose of the two groups of packages (take a look at the direction)?
+	Small packages: Init with 3-way handshake, Large packages: Responses with HTML/Image
+
